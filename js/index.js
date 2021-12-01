@@ -43,14 +43,21 @@ submitButton.addEventListener("click",function(){
     if((document.querySelector("#calPin").value)==(document.querySelector("#getpin").value))
     {
         notifyTwo.style.display="block";
+        notifyOne.style.display="none";
     }
     else
     {
         notifyOne.style.display="block";
+        notifyTwo.style.display="none";
     }
     if(document.querySelector("#getpin").value=="")
     {
-        alert("Please generate pin number")
+        alert("Please Generate pin number")
+        notifyOne.style.display="none";
+    } 
+    if(document.querySelector("#calPin").value=="")
+    {
+        alert("Please Enter pin number")
         notifyOne.style.display="none";
     } 
 });
