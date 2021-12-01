@@ -51,6 +51,7 @@ submitButton.addEventListener("click",function(){
     if(document.querySelector("#getpin").value=="")
     {
         alert("Please generate pin number")
+        notifyOne.style.display="none";
     } 
 });
 /*---------------------random number function-------------------------- */
