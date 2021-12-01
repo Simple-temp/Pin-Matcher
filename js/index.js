@@ -33,7 +33,7 @@ generatePin.addEventListener("click",function(){
     }
     const storeValue = RandomPin;
 
-        document.querySelector("#getpin").value=storeValue;
+        document.querySelector("#getpin").value=storeValue;   
 
 })
 /*---------------------submit value value-------------------------- */
@@ -48,6 +48,10 @@ submitButton.addEventListener("click",function(){
     {
         notifyOne.style.display="block";
     }
+    if(document.querySelector("#getpin").value=="")
+    {
+        alert("Please generate pin number")
+    } 
 });
 /*---------------------random number function-------------------------- */
 function getRandomPinNumber()
